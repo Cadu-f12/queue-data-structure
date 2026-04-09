@@ -24,4 +24,4 @@ A CLI permite executar as seguintes operações:
 
 1. Clone o repositório:
    ```bash
-   git clone [https://github.com/seu-usuario/nome-do-repo.git](https://github.com/seu-usuario/nome-do-repo.git)
+   git clone [https://github.com/Cadu-f12/queue-data-structure.git](https://github.com/Cadu-f12/queue-data-structure.git)
