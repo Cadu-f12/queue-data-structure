@@ -5,8 +5,6 @@ Uma implementação robusta de estrutura de dados de fila (Queue) em C, acompanh
 ## 📋 Sobre o Projeto
 Este repositório contém a implementação de uma fila dinâmica/estática, focada em demonstrar conceitos fundamentais de gerenciamento de memória e lógica de estruturas de dados. O projeto foi estruturado para ser modular, separando a lógica da fila da interface de interação com o usuário.
 
-
-
 ## ✨ Funcionalidades
 A CLI permite executar as seguintes operações:
 * **Enqueue:** Adicionar um elemento ao final da fila.
@@ -20,8 +18,12 @@ A CLI permite executar as seguintes operações:
 * GCC (GNU Compiler Collection)
 * Makefile (Opcional)
 
+<div align="center">
+  <img src="https://runestone.academy/ns/books/published/pythonds/_images/queue.png" alt="Estrutura de Fila FIFO" width="500">
+  <p><i>Representação Visual de uma Fila (First-In, First-Out)</i></p>
+</div>
+
 ## 🚀 Como Executar
 
-1. Clone o repositório:
    ```bash
-   git clone [https://github.com/Cadu-f12/queue-data-structure.git](https://github.com/Cadu-f12/queue-data-structure.git)
+      ./main ou main
