@@ -13,7 +13,7 @@ A CLI permite executar as seguintes operações:
 * **Display:** Exibir todos os elementos da fila atual.
 * **Clear:** Esvaziar a fila completamente.
 
-## 🛠️ Tecnologias Utilizadashttps://media.geeksforgeeks.org/wp-content/uploads/20250827110558739481/Dequeue-Operation-in-Queue-1.webp
+## 🛠️ Tecnologias Utilizadas
 * Linguagem C
 * GCC (GNU Compiler Collection)
 * Makefile (Opcional)
