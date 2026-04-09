@@ -13,13 +13,13 @@ A CLI permite executar as seguintes operações:
 * **Display:** Exibir todos os elementos da fila atual.
 * **Clear:** Esvaziar a fila completamente.
 
-## 🛠️ Tecnologias Utilizadas
+## 🛠️ Tecnologias Utilizadashttps://media.geeksforgeeks.org/wp-content/uploads/20250827110558739481/Dequeue-Operation-in-Queue-1.webp
 * Linguagem C
 * GCC (GNU Compiler Collection)
 * Makefile (Opcional)
 
 <div align="center">
-  <img src="https://runestone.academy/ns/books/published/pythonds/_images/queue.png" alt="Estrutura de Fila FIFO" width="500">
+  <img src="https://media.geeksforgeeks.org/wp-content/uploads/20250827110558739481/Dequeue-Operation-in-Queue-1.webp" alt="Estrutura de Fila FIFO" width="500">
   <p><i>Representação Visual de uma Fila (First-In, First-Out)</i></p>
 </div>
 
