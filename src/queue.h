@@ -4,7 +4,7 @@ int is_full(Queue *queue);
 
 int is_empty(Queue *queue);
 
-Queue* create_queue();
+Queue* create_queue(int length);
 
 int enqueue(Queue* queue, int value);
 

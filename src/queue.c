@@ -9,7 +9,7 @@ typedef struct Queue_ {
 
 int is_full(Queue *queue) {
     if(!queue) {
-        printf("Queue is NULL");
+        printf("Queue is NULL\n");
         return 0;
     }
 
@@ -22,7 +22,7 @@ int is_full(Queue *queue) {
 
 int is_empty(Queue *queue) {
     if(!queue) {
-        printf("Queue is NULL");
+        printf("Queue is NULL\n");
         return 0;
     }
 
@@ -31,26 +31,42 @@ int is_empty(Queue *queue) {
     }
 }
 
-Queue* create_queue() {
+Queue* create_queue(int length) {
     Queue *queue = malloc(sizeof(Queue));
     
     if(queue == NULL) {
-        printf("The queue isnt allocated");
+        printf("The queue isnt allocated\n");
         return queue;
     }
-    
-    int length = 3;
 
     queue->size = length;
     
     queue->tail = 0;
     
     queue->queue = malloc(sizeof(int) * length);
-    queue->queue--;
+    queue->queue -= 1;
 }
 
 int enqueue(Queue* queue, int value) {
-    printf("1");
+    if(!queue) {
+        printf("Queue is NULL\n");
+        return 0;
+    }
+    if(is_full(queue)) {
+         printf("Fail to input %d\n", value);
+        printf("Queue is FULL\n");
+        return 0;
+    }
+    if(is_empty(queue)) {
+        printf("Queue is EMPTY\n");
+        queue->queue[1] = value;
+    } else {
+        queue->queue[queue->tail] = value;
+    }
+    
+    queue->tail++;
+    queue->queue++;
+    return 1;
 }
 
 int dequeue(Queue* queue, int* value) {
@@ -63,7 +79,7 @@ int peek(Queue* queue, int* value) {
 
 void free_queue(Queue* queue) {
     if(!queue) {
-        printf("Queue is NULL");
+        printf("Queue is NULL\n");
         return;
     }
 
