@@ -44,7 +44,6 @@ Queue* create_queue(int length) {
     queue->tail = 0;
     
     queue->queue = malloc(sizeof(int) * length);
-    queue->queue -= 1;
 }
 
 int enqueue(Queue* queue, int value) {
@@ -53,23 +52,18 @@ int enqueue(Queue* queue, int value) {
         return 0;
     }
     if(is_full(queue)) {
-         printf("Fail to input %d\n", value);
+        printf("Fail to input %d\n", value);
         printf("Queue is FULL\n");
         return 0;
     }
-    if(is_empty(queue)) {
-        printf("Queue is EMPTY\n");
-        queue->queue[1] = value;
-    } else {
-        queue->queue[queue->tail] = value;
-    }
+    
+    queue->queue[queue->tail] = value;
     
     queue->tail++;
-    queue->queue++;
     return 1;
 }
 
-int dequeue(Queue* queue, int* value) {
+int dequeue(Queue* queue, int *value) {
     printf("1");
 }
 
