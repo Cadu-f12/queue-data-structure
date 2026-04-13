@@ -11,7 +11,6 @@ A CLI permite executar as seguintes operações:
 * **Dequeue:** Remover o elemento do início da fila.
 * **Front:** Visualizar o primeiro elemento sem removê-lo.
 * **Display:** Exibir todos os elementos da fila atual.
-* **Clear:** Esvaziar a fila completamente.
 
 ## 🛠️ Tecnologias Utilizadas
 * Linguagem C
