@@ -85,8 +85,18 @@ int dequeue(Queue* queue, int *value) {
     return 1;
 }
 
-int peek(Queue* queue, int* value) {
-    printf("1");
+int peek(Queue* queue, int *value) {
+    if(!queue) {
+        printf("Queue is NULL\n");
+        return 0;
+    }
+    if(is_empty(queue)) {
+        printf("Queue is EMPTY\n");
+        return 0;
+    }
+
+    *value = queue->queue[queue->tail - 1];
+    return 1;
 }
 
 void free_queue(Queue* queue) {
