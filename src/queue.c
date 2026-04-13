@@ -28,6 +28,8 @@ int is_empty(Queue *queue) {
 
     if(queue->tail == 0) {
         return 1;
+    } else {
+        return 0;
     }
 }
 
@@ -64,7 +66,23 @@ int enqueue(Queue* queue, int value) {
 }
 
 int dequeue(Queue* queue, int *value) {
-    printf("1");
+    if(!queue) {
+        printf("Queue is NULL\n");
+        return 0;
+    }
+    if(is_empty(queue)) {
+        printf("Queue is EMPTY\n");
+        return 0;
+    }
+
+    *value = queue->queue[0];
+
+    for(int i = 0; i < queue->size; i++) {
+        queue->queue[i] = queue->queue[i + 1];
+    }
+
+    queue->tail--;
+    return 1;
 }
 
 int peek(Queue* queue, int* value) {
