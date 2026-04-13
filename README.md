@@ -15,7 +15,6 @@ A CLI permite executar as seguintes operações:
 ## 🛠️ Tecnologias Utilizadas
 * Linguagem C
 * GCC (GNU Compiler Collection)
-* Makefile (Opcional)
 
 <div align="center">
   <img src="https://media.geeksforgeeks.org/wp-content/uploads/20250827110558739481/Dequeue-Operation-in-Queue-1.webp" alt="Estrutura de Fila FIFO" width="500">
