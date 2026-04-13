@@ -1,5 +1,9 @@
 typedef struct Queue_ Queue;
 
+int is_full(Queue *queue);
+
+int is_empty(Queue *queue);
+
 Queue* create_queue();
 
 int enqueue(Queue* queue, int value);
