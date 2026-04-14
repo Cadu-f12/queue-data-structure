@@ -95,7 +95,7 @@ int peek(Queue* queue, int *value) {
         return 0;
     }
 
-    *value = queue->queue[queue->tail - 1];
+    *value = queue->queue[0]; // pergar o primeiro e não o último
     return 1;
 }
 
