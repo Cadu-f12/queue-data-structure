@@ -26,4 +26,4 @@ A CLI permite executar as seguintes operações:
   #### ! A CLI foi desenvolvida para terminais Linux, então provavelmente a CLI irá bugar em outros tipos de terminais.
   
    ```bash
-      ./main ou main
+      ./queue-data-structure/src/main
