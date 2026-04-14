@@ -23,5 +23,7 @@ A CLI permite executar as seguintes operações:
 
 ## 🚀 Como Executar
 
+  # ! A CLI foi desenvolvida para terminais Linux, então provavelmente a CLI irá bugar em outros tipos de terminais.
+  
    ```bash
       ./main ou main
